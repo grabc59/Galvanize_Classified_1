@@ -3,7 +3,7 @@
 module.exports = {
   development: { 
     client: 'pg',
-    connection: 'postgres://localhost/galvanize_classified_db'
+    connection: 'postgres://localhost/galvanize_classified_dev'
   },
   test: { 
     client: 'pg',

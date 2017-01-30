@@ -44,12 +44,13 @@ router.get('/:id', function(req, res, next) {
 router.post('/', function(req, res, next) {
   knex('classifieds')
     .insert({
-      name: req.body.name,
-      message: req.body.message
+      title: req.body.title,
+      description: req.body.description,
+      price: req.body.price,
+      item_image: req.body.item_image
     }, '*')
     .then((result) => {
       const return_result = result[0];
-      delete return_result.id;
       delete return_result.created_at;
       delete return_result.updated_at;
       res.send(return_result);
