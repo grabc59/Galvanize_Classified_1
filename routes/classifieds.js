@@ -27,7 +27,7 @@ router.get('/', function(req, res, next) {
 ////////////////////////
 router.get('/:id', function(req, res, next) {
   knex('classifieds')
-    .select('id', 'name', 'message')
+    .select('id', 'title', 'description', 'price', 'item_image')
     .where({id: req.params.id})
     .first()
     .then((result) => {
