@@ -13,7 +13,7 @@ const router = express.Router();
 ////////////////////////
 router.get('/', function(req, res, next) {
   knex('classifieds')
-  .select('id', 'title', 'description')
+  .select('id', 'title', 'description', 'price', 'item_image')
   .then((result) => {
     res.send(result);
   })
