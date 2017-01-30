@@ -11,6 +11,6 @@ module.exports = {
   },
   production: {
     client: 'pg',
-    connection: 'postgres://vhqanooxzvhlqv:065cf8b07ed44628fd5b8273775766e5765b24cc52b1eac0177faf741c6f48e5@ec2-54-235-120-27.compute-1.amazonaws.com:5432/dfurbv7a35v5h0'
+    connection: 'postgres://eceqyldmeleyil:3cde3244ceaccacfe3df949ff5a6acad5eeabb4085434a6a678cbbd32fec7fad@ec2-54-235-72-121.compute-1.amazonaws.com:5432/d6nlo031n4ive8'
   }
 };
