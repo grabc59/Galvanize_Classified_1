@@ -68,8 +68,10 @@ router.patch('/:id', function(req, res, next) {
     .where({id: req.params.id})
     .first()
     .update({
-      name: req.body.name,
-      message: req.body.message
+      title: req.body.title,
+      description: req.body.description,
+      price: req.body.price,
+      item_image: req.body.item_image
     }, '*')
     .then ((result) => {
       let return_result = result[0];
