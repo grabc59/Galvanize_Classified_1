@@ -1,9 +1,16 @@
 // Update with your config settings.
 
 module.exports = {
-
-  development: { },
-  test: { },
-  production: { },
-
+  development: { 
+    client: 'pg',
+    connection: 'postgres://localhost/galvanize_classified_db'
+  },
+  test: { 
+    client: 'pg',
+    connection: 'postgres://localhost/galvanize_classified_test'
+  },
+  production: { 
+    client: 'pg',
+    connection: 'postgres://localhost/galvanize_classified_db'
+  }
 };
